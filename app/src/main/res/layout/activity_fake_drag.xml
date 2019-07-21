@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#C2D3DA">
+
+    <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"/>
+
+    <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+    <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#F1F3F2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@+id/touchLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="64dp">
+
+            <ImageView
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/icon_move_left"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+            <ImageView
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/icon_move_right"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+</LinearLayout>
